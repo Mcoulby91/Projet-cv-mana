@@ -3,6 +3,7 @@ body
 {
     background-color: aqua;
     display: flex;
+    margin: 0;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -12,12 +13,13 @@ body
 .corp_cv 
 {
     position: relative;
-    width: 100%;
+    width: 900px;
+    margin: 0px auto;
     max-width: 21cm;
     min-height: 29.7cm;
     background: rgb(255, 255, 255);
     display: grid ;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 2fr ;
 
 }
 
@@ -26,19 +28,13 @@ body
 {
     position :relative;
     background-color: brown;
-    width: 80%;
-    grid-column: span 1;
-    padding-right: 40px;
-    
-
-
+    padding: 40px;
 }
 
 .photo_profil 
 {
     position: relative;
     align-items: center;
-    padding: 10%;
 
 }
 /*Le style appliqué à l'image de la partie gauche du cv*/
@@ -112,10 +108,9 @@ ul {
 .partie_droite 
 {
     position: relative;
-    width: 110%;
     background-color: rgb(255, 255, 255);
-    grid-column: span 1;
     line-height: 1.5;
+    padding: 40px;
 }
 
 #nom {
@@ -149,4 +144,12 @@ span
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
+
 /*Fin du style appliqué à la partie droite du cv*/
+
+@media 
+ (max-width:900px) {
+    .corp_cv{
+    grid-template-columns: repeat(1,1fr);
+    }
+}
