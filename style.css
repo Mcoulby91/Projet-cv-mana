@@ -1,0 +1,152 @@
+
+body 
+{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/*Le style appliqué à la partie entière du cv*/
+.corp_cv 
+{
+    position: relative;
+    width: 100%;
+    max-width: 21cm;
+    min-height: 29.7cm;
+    background: rgb(255, 255, 255);
+    display: grid ;
+    grid-template-columns: 1fr 1fr ;
+
+}
+
+/*Début du style appliqué à la partie gauche du cv*/
+.partie_gauche 
+{
+    position :relative;
+    background-color: brown;
+    width: 80%;
+    grid-column: span 1;
+    padding-right: 40px;
+    
+
+
+}
+
+.photo_profil 
+{
+    position: relative;
+    align-items: center;
+    padding: 10%;
+
+}
+/*Le style appliqué à l'image de la partie gauche du cv*/
+.image 
+{
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    border-radius: 90%;
+
+}
+/*Le style appliqué au titre de la partie gauche du cv*/
+h1
+{
+    color: aliceblue;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+}
+/*Le style appliqué au liste de la partie gauche du cv*/
+ul {
+    list-style: none;
+    color: aliceblue;
+    line-height: 2;
+    padding-left: 60px;
+    font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+/*Le style appliqué à la barre de progression des langues*/
+.bordure {
+    width: 100px;
+    height: 5px;
+    border-radius: 10px;
+    box-sizing: content-box;
+    box-shadow: 1px 1px 1px rgb(255, 255, 255);
+    background-color: rgb(5, 5, 5);
+
+}
+#valeur1 {
+    width: 90px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    background-clip: content-box;
+
+}
+#valeur2 {
+    width: 75px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    background-clip: content-box;
+}
+#valeur3 {
+    width: 60px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    background-clip: content-box;
+    
+}
+/*Le style appliqué aux icones du cv*/
+.icone {
+    width: 20px;
+    padding-right: 5px;
+
+}
+/*Fin du style appliqué à la partie gauche du cv*/
+
+
+/*Début du style appliqué à la partie droite du cv*/
+.partie_droite 
+{
+    position: relative;
+    width: 110%;
+    background-color: rgb(255, 255, 255);
+    grid-column: span 1;
+    line-height: 1.5;
+}
+
+#nom {
+     color: brown;
+     text-align: left;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+}
+#a_propos 
+{
+    font-size: larger;
+    font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+#exp 
+{
+    text-align: left;
+    color:brown;
+    margin-right: 1px;
+    
+
+
+}
+.paragraphe 
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+span
+ {
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+/*Fin du style appliqué à la partie droite du cv*/
